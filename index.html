@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <title>مكتب جوهرة للمحاماه</title>
     <style>
         * {
@@ -187,7 +190,7 @@
 
 .stat h3 {
     font-size: 28px;
-    color: #fff;
+    color: #f0d070;
 }
 
 .stat p {
@@ -484,7 +487,7 @@
 }
 
 .footer-bottom .heart {
-    color: red;
+    color: rgb(23, 148, 102);
 }
 
 /* موبايل */
@@ -548,6 +551,131 @@
     }
 }
 
+
+/* سكشن خدمات الشركات */
+.company-services {
+    padding: 60px 20px;
+    background-color: #1a1a1a; /* لون غامق متماشي مع هوية الموقع */
+    color: #fff;
+    text-align: center;
+}
+
+.company-services .section-title {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #f4c542; /* لون العناوين */
+}
+
+.company-services .section-desc {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #ddd;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.service-item {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-8px);
+}
+
+.service-item .icon {
+    font-size: 40px;
+    color: #f4c542;
+    margin-bottom: 15px;
+}
+
+.service-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.service-item p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+/* موبايل */
+@media (max-width: 768px) {
+    .company-services {
+        padding: 40px 15px;
+    }
+    .company-services .section-title {
+        font-size: 24px;
+    }
+    .company-services .section-desc {
+        font-size: 16px;
+    }
+    .service-item {
+        padding: 20px;
+    }
+}
+
+
+
+.mobile-social {
+    display: none; /* إخفاء على الديسكتوب */
+    text-align: center;
+    margin-top: 15px;
+}
+
+.mobile-social a {
+    color: #FFD700; /* أصفر */
+    font-size: 20px;
+    margin: 0 8px;
+    transition: color 0.3s ease;
+}
+
+.mobile-social a:hover {
+    color: #fff200; /* أصفر أفتح عند الهوفر */
+}
+
+@media (max-width: 768px) {
+    .mobile-social {
+        display: flex; /* إظهار على الموبايل فقط */
+    }
+}
+
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ccb011; /* أصفر */
+    color: #261b1b;
+    padding: 10px 12px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    cursor: pointer;
+    z-index: 999;
+    display: block; /* هيظهر بس عند النزول */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #e6c200; /* أصفر أغمق */
+    transform: translateY(-3px);
+}
+
+img.company-logo {
+    height: 55px;
+    width: 56px;
+    margin-bottom: -19PX;
+    MARGIN-RIGHT: -11Px;
+}
     </style>
 </head>
 <body>
@@ -570,13 +698,23 @@
 
     <!-- سايد منيو -->
     <div class="side-menu" id="sideMenu">
-        <a href="#">من نحن؟</a>
-        <a href="#">التوثيق</a>
+        <a href="#">الرئيسية </a>
+        <a href="#">من نحن</a>
         <a href="#">خدماتنا</a>
-        <a href="#">استشارات مرئية</a>
         <a href="#">عملاؤنا</a>
+        <a href="#">المدونة</a>
         <a href="#">حجز المواعيد</a>
+<div class="mobile-social">
+    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-snapchat-ghost"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+</div>
+        
     </div>
+    <!-- روابط السوشيال ميديا - موبايل فقط -->
+
+
 
     <!-- البانر -->
     <section class="banner">
@@ -595,6 +733,17 @@
             نحن مكتب الجوهرة للمحاماة، نقدم خدمات قانونية وشرعية على أعلى مستوى من الكفاءة والخبرة، 
             ونسعى دائمًا لتقديم الحلول المبتكرة لعملائنا في جميع القضايا.
         </p>
+         <div class="container">
+        <h2 class="section-title">الخبرة القانونية</h2>
+        <p class="experience-text">
+           
+الخبرة القانونية
+وثيقة
+سعی مكتب المحامية جوهرة آل عيسى الذي تأسس في عام [٢٠١٩ م] لتقديم خدمات قانونية متميزة، ومنذ البداية و نحن نتغلب على التحديات القانونية حيث قدمنا حلولاً فريدة تتماشى مع تطورات الأنظمة المحلية والدولية.
+بتقدير (جيد مرتفع) في الفصل الدراسي الثاني ١٢٥ هي متمنين لها دوام التوفيق والنجاح
+توسعت أعمالنا وازداد عدد عملائنا، مما يعكس المكانة الرائدة التي أصبحت لدينا في السوق،
+        </p>
+    </div>
         <div class="stats">
             <div class="stat">
                 <h3 id="count1">0</h3>
@@ -615,6 +764,9 @@
         </div>
     </div>
 </section>
+
+
+
 <!-- خدماتنا -->
 <section class="services-section">
     <div class="services-content">
@@ -630,37 +782,94 @@
                     <img src="images/3e1960e92597b6c8ea79108b39cccf89.jpg" alt="التوثيق">
                     <div class="card-overlay">التوثيق</div>
                 </div>
-                <p class="card-desc">نقدم خدمات التوثيق المعتمدة لكافة أنواع العقود والمستندات.</p>
+                <p class="card-desc">توثيق بيع وافراغ العقارات ,توثيق الرهن وفكه, اصدار الوكالات وفسخها,توثيق عقود الشركات وملاحق التعديل,توثيق الاقرار بالديون وتسلمها والتنازل عنها.</p>
             </div>
             <!-- كارت 2 -->
             <div class="service-card">
                 <div class="card-img">
                     <img src="images/b2add8c786c15df89f0e05428172a761.jpg" alt="العقود والاتفاقيات">
-                    <div class="card-overlay">العقود والاتفاقيات</div>
+                    <div class="card-overlay">التقاضي والترافع وضمان حقوقك القضائية </div>
                 </div>
-                <p class="card-desc">صياغة ومراجعة كافة العقود والاتفاقيات القانونية.</p>
+                <p class="card-desc">   
+نقوم بالتمثيل أمام جميع ا الجهات القضائية بما فيها المحاكم واللجان المتعددة، بما يشمل حالات القضايا الجنائية ، القضايا المدنية ، القضايا التجارية و أحوال شخصية وتوجيه النزاعات الأسرية.  .</p>
             </div>
             <!-- كارت 3 -->
             <div class="service-card">
                 <div class="card-img">
                     <img src="images/71c37af035452037fb68d4bb4a1ef190.jpg" alt="تأسيس الشركات">
-                    <div class="card-overlay">تأسيس وتسجيل الشركات</div>
+                    <div class="card-overlay">  تأسیس وحوكمة الشركات</div>
                 </div>
-                <p class="card-desc">خدمة تأسيس وتسجيل الشركات بكافة أشكالها القانونية.</p>
+                <p class="card-desc">تأسيس الشركات من صياغة العقود المستندات القانونية ، تحديد الهيكل المطلوب، و تقديم مشورة قانونية حول متطلبات التسجيل و التراخيص اللازمة و حوكمتها من خلال فريق عمل إداري وتنفيذي فعّال..</p>
             </div>
             <!-- كارت 4 -->
 <div class="service-card">
     <div class="card-img">
         <img src="images/092a3bd6858f433d5389b24995fd4ff3.jpg" alt="التحكيم">
-        <div class="card-overlay">التحكيم</div>
+        <div class="card-overlay">دراسة القضايا
+و الاستشارات القانونية
+</div>
     </div>
     <p class="card-desc">
-        تقديم خدمات التحكيم وحل النزاعات بطرق ودية وقانونية وفق الأنظمة المحلية والدولية.
-    </p>
+سواء كنت فردًا أو مؤسسة، فنحن نعمل على تحديد الموقف القانوني مع التخطيط القانوني السليم وتقديم التوجيه الصحيح بناءً على الحقائق والقوانين المعمول بها في المملكة العربية السعودية.    </p>
 </div>
         </div>
     </div>
 </section>
+
+<!-- سكشن قائمة خدمات الشركات والمؤسسات -->
+<section class="company-services">
+    <div class="container">
+        <h2 class="section-title">قائمة خدمات الشركات والمؤسسات</h2>
+        <p class="section-desc">
+            نقدم مجموعة متكاملة من الخدمات القانونية المخصصة للشركات والمؤسسات، 
+            لضمان الامتثال للقوانين وتعزيز نجاح أعمالكم.
+        </p>
+
+        <div class="services-grid">
+            <div class="service-item">
+                <div class="icon">
+                    <i class="fas fa-file-contract"></i>
+                </div>
+                <h3>صياغة العقود</h3>
+                <p>إعداد وصياغة كافة أنواع العقود التجارية وضمان سلامتها القانونية.</p>
+            </div>
+
+            <div class="service-item">
+                <div class="icon">
+                    <i class="fas fa-gavel"></i>
+                </div>
+                <h3>التحكيم التجاري</h3>
+                <p>حل النزاعات التجارية من خلال التحكيم المحلي والدولي.</p>
+            </div>
+
+            <div class="service-item">
+                <div class="icon">
+                    <i class="fas fa-balance-scale"></i>
+                </div>
+                <h3>الاستشارات القانونية</h3>
+                <p>تقديم استشارات قانونية متخصصة لدعم قرارات الأعمال.</p>
+            </div>
+
+            <div class="service-item">
+                <div class="icon">
+                    <i class="fas fa-building"></i>
+                </div>
+                <h3>تأسيس الشركات</h3>
+                <p>خدمات تأسيس الشركات بكافة أنواعها وتسجيلها وفق القوانين.</p>
+            </div>
+
+            <div class="service-item">
+                <div class="icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <h3>الاندماجات والاستحواذات</h3>
+                <p>تقديم المشورة القانونية لعمليات الدمج والاستحواذ بين الشركات.</p>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
 
 <!-- سكشن عملاؤنا -->
 <section class="clients-section">
@@ -748,9 +957,9 @@
         <div class="footer-column">
             <h3>تواصل معنا</h3>
             <ul>
-                <li>📍 مكة المملكة العربية السعودية</li>
-                <li>📞 +966 555 555 555</li>
-                <li>✉ info@example.com</li>
+                <li>📍 Jabal Thawr St., Mecca, Saudi Arabia   </li>
+                <li>📞 +966-54-543-2491</li>
+                <li>✉ jawharahlawfirm@gmail.com</li>
             </ul>
         </div>
 
@@ -762,10 +971,17 @@
     </div>
 
     <!-- حقوق الملكية -->
-    <div class="footer-bottom">
-        <p>صنع بحب <span class="heart">❤</span> بواسطة شركة <strong>بي كلاود</strong></p>
-    </div>
+  <div class="footer-bottom">
+    <p>صنع بكل حب <span class="heart">❤</span> بواسطة 
+        <img src="images/New Logo white background (1).png" alt="لوجو الشركة" class="company-logo">
+    </p>
+</div>
+
+
 </footer>
+
+<!-- زر العودة لأعلى -->
+
 
     <script>
         function toggleMenu() {
@@ -790,11 +1006,14 @@
 
         window.onload = function () {
             animateValue("count1", 0, 500, 2000);
-            animateValue("count2", 0, 1000000, 2500);
+            animateValue("count2", 0, 10000, 2500);
             animateValue("count3", 0, 3300, 2000);
             animateValue("count4", 0, 12, 1500);
         }
     </script>
 
+    <a href="#" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+</a>
 </body>
 </html>
